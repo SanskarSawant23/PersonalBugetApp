@@ -7,8 +7,8 @@ export const ExpenseList = ({expenses}) => {
   return (
     <div>
         <div> 
-            <h2> Expense</h2>
-            <ul>{expenses.map((expense, index)=>(  //Iam not returning the data from this functio
+            <h2> Your Expenses</h2>
+            <ul>{expenses.map((expense, index)=>(  
                 <li key={index}>
                     <strong>₹{expense.amount}</strong> - {expense.category} on {new Date(expense.date).toLocaleDateString()} 
                 </li>
